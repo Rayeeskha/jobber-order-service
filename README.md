@@ -261,7 +261,7 @@ PORT=4006
 
 CLIENT_URL=http://localhost:3000
 
-MONGODB_URL=mongodb://localhost:27017/jobber-order
+MONGODB_URL=mongodb://localhost:27017/jobber-orders
 
 RABBITMQ_ENDPOINT=amqp://localhost
 
@@ -338,7 +338,7 @@ docker login
 ## Build Docker Image
 
 ```bash
-docker build --build-arg NPM_TOKEN=<YOUR_GITHUB_TOKEN> -t rayeeskhandev/jobber-order .
+docker build --build-arg NPM_TOKEN=<YOUR_GITHUB_TOKEN> -t rayeeskhandev/jobber-orders .
 ```
 
 ---
@@ -346,7 +346,7 @@ docker build --build-arg NPM_TOKEN=<YOUR_GITHUB_TOKEN> -t rayeeskhandev/jobber-o
 ## Tag Docker Image
 
 ```bash
-docker tag rayeeskhandev/jobber-order rayeeskhandev/jobber-order:stable
+docker tag rayeeskhandev/jobber-orders rayeeskhandev/jobber-orders:stable
 ```
 
 ---
@@ -354,7 +354,7 @@ docker tag rayeeskhandev/jobber-order rayeeskhandev/jobber-order:stable
 ## Push Docker Image
 
 ```bash
-docker push rayeeskhandev/jobber-order:stable
+docker push rayeeskhandev/jobber-orders:stable
 ```
 
 ---
@@ -364,11 +364,11 @@ docker push rayeeskhandev/jobber-order:stable
 ```bash
 docker login
 
-docker build --build-arg NPM_TOKEN=<YOUR_GITHUB_TOKEN> -t rayeeskhandev/jobber-order .
+docker build --build-arg NPM_TOKEN=<YOUR_GITHUB_TOKEN> -t rayeeskhandev/jobber-orders .
 
-docker tag rayeeskhandev/jobber-order rayeeskhandev/jobber-order:stable
+docker tag rayeeskhandev/jobber-orders rayeeskhandev/jobber-orders:stable
 
-docker push rayeeskhandev/jobber-order:stable
+docker push rayeeskhandev/jobber-orders:stable
 ```
 
 ---
